@@ -1,0 +1,58 @@
+{
+  "selected_params": {
+    "max_depth": 20,
+    "min_samples_leaf": 1
+  },
+  "beta_fit": 0.006406592161626127,
+  "threshold": 0.013679154399218789,
+  "threshold_rule": "max_f1_on_validation",
+  "f1_at_threshold": 0.13516746411483255,
+  "row_level": {
+    "rows": 1508766,
+    "positives": 481,
+    "prevalence": 0.00031880357855359944,
+    "pr_auc": 0.04845561558326778,
+    "roc_auc": 0.852997061269702,
+    "brier": 0.00031333951744384834,
+    "brier_reference_constant_prevalence": 0.00031870194283190083,
+    "mean_predicted": 0.00018994634376825627,
+    "observed_rate": 0.00031880357855359944,
+    "recall_at_fpr_0.001": 0.27234927234927236,
+    "threshold_at_fpr_0.001": 0.011263094760229637,
+    "recall_at_fpr_0.01": 0.5239085239085239,
+    "threshold_at_fpr_0.01": 0.0017001724599860616,
+    "threshold": 0.013679154399218789,
+    "tp": 113,
+    "fp": 1078,
+    "fn": 368,
+    "tn": 1507207,
+    "precision": 0.0948782535684299,
+    "recall": 0.23492723492723494,
+    "fpr": 0.000714719035195603,
+    "false_alarms_per_1000_negative_drive_days": 0.714719035195603
+  },
+  "drive_level": {
+    "failed_drives": 107,
+    "failed_drives_detected": 37,
+    "pct_failed_drives_detected": 34.57943925233645,
+    "lead_time_days_mean": 4.324324324324325,
+    "lead_time_days_median": 4.0,
+    "lead_time_days_distribution": {
+      "1": 5,
+      "2": 9,
+      "3": 2,
+      "4": 3,
+      "5": 2,
+      "6": 3,
+      "7": 13
+    },
+    "false_alarm_rows": 1078,
+    "negative_drive_days": 1508285,
+    "false_alarms_per_1000_drive_days": 0.714719035195603,
+    "never_failed_drives": 108207,
+    "never_failed_drives_with_any_alarm": 182,
+    "pct_never_failed_drives_with_any_alarm": 0.16819614257857624
+  },
+  "brier_uncorrected": 0.0027468795888125896,
+  "mean_uncorrected_score": 0.02306482195854187
+}

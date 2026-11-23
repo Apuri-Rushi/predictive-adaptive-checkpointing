@@ -1,0 +1,14 @@
+parameter,value
+Algorithm,Random Forest classifier (scikit-learn 1.7.2)
+Prediction target,failure on day t+1 … t+7 given SMART history ≤ t
+Input features,"128 (no serial, date, model or capacity)"
+Trees / max features,300 / sqrt
+Max depth / min samples per leaf,20 / 1 (selected)
+Bootstrap / class weights,True / none
+Missing values,kept as NaN (native routing)
+Hyper-parameter grid,"max depth {10, 20, none} × min leaf {1, 5, 20}; 9 configurations"
+Selection metric,PR-AUC on internal validation 2019-05-11 – 2019-05-24
+Negative sampling,"20 : 1, stratified by date × model; 1,842 positives + 36,840 negatives"
+Prior correction,"p = βs / (βs + 1 − s), β = 0.006415"
+Alarm threshold (p),0.01368 (max F1 on validation)
+Random seed,20190401

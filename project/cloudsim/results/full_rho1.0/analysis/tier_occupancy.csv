@@ -1,0 +1,5 @@
+hosts,n_hosts,host_days,LOW,MEDIUM,HIGH
+all,110848.0,3325440.0,54.09,39.305,6.605
+failing,175.0,5250.0,24.781,22.914,52.305
+non_failing,110673.0,3320190.0,54.136,39.331,6.533
+validation_design_target,,,90.0,9.0,1.0

@@ -1,0 +1,22 @@
+Determinism re-run logs (copied verbatim from the session's background-task outputs; the scenario is identified from the
+issuing command, which wrote to scratchpad/determinism_rho0.9 and later determinism_rho1.0). Shards 36 and 18 are the two
+shards with the most failures. Each was re-run from scratch into a separate folder, and the 71 per-file SHA-256 hashes were compared
+with the recorded OUTPUT_SHA256.txt of the full run.
+
+=== rho = 0.9 (log written 2026-11-23 10:15 +05:30) ===
+rerun shards 36,18
+shard 18: DONE in 116.1 s
+shard 36: DONE in 119.2 s
+shard 36: OUTPUT_SHA256 identical (71 files)
+shard 18: OUTPUT_SHA256 identical (71 files)
+
+[exited with code 0]
+
+=== rho = 1.0 (log written 2026-11-23 12:11 +05:30) ===
+rerun shards 36,18
+shard 36: DONE in 149.4 s
+shard 18: DONE in 159.9 s
+shard 36: OUTPUT_SHA256 identical (71 files)
+shard 18: OUTPUT_SHA256 identical (71 files)
+
+[exited with code 0]

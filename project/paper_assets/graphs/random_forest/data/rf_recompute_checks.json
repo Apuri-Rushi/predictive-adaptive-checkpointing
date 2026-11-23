@@ -1,0 +1,20 @@
+{
+ "rows":2544754,
+ "positives":997,
+ "roc_auc_recomputed":0.8044107763,
+ "pr_auc_recomputed":0.0337346245,
+ "roc_auc_reported":0.8044107917,
+ "pr_auc_reported":0.0337346787,
+ "cm_recomputed":[
+  206,
+  4597,
+  791,
+  2539160
+ ],
+ "cm_reported":[
+  206,
+  4597,
+  791,
+  2539160
+ ]
+}

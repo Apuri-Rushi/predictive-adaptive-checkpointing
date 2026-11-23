@@ -1,0 +1,12 @@
+* text=auto
+*.sh text eol=lf
+*.py text
+*.java text
+*.md text
+*.csv text
+*.tex text
+*.png binary
+*.pdf binary
+*.gz binary
+*.joblib binary
+*.zip binary

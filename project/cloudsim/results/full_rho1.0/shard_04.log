@@ -1,0 +1,11 @@
+E1_none                    jobs=22763 failures=4/4 cloudlets=63209 wall=1.8s peakHeap=238MB
+E2_fixed_T0_1h             jobs=22763 failures=4/4 cloudlets=3072184 wall=46.1s peakHeap=268MB
+E2_fixed_T0_4h             jobs=22763 failures=4/4 cloudlets=797419 wall=9.8s peakHeap=186MB
+E2_fixed_T0_12h            jobs=22763 failures=4/4 cloudlets=293099 wall=4.4s peakHeap=122MB
+E2_fixed_T0_24h            jobs=22763 failures=4/4 cloudlets=164651 wall=1.9s peakHeap=152MB
+E2_fixed_T0_72h            jobs=22763 failures=4/4 cloudlets=95890 wall=1.1s peakHeap=180MB
+E3_adaptive_T0_1h          jobs=22763 failures=4/4 cloudlets=2890406 wall=43.9s peakHeap=254MB
+E3_adaptive_T0_4h          jobs=22763 failures=4/4 cloudlets=751134 wall=11.5s peakHeap=135MB
+E3_adaptive_T0_12h         jobs=22763 failures=4/4 cloudlets=282224 wall=3.7s peakHeap=142MB
+E3_adaptive_T0_24h         jobs=22763 failures=4/4 cloudlets=167981 wall=2.2s peakHeap=159MB
+E3_adaptive_T0_72h         jobs=22763 failures=4/4 cloudlets=88364 wall=1.0s peakHeap=139MB

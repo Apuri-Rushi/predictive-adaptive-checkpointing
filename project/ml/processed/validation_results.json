@@ -1,0 +1,327 @@
+{
+  "feature list matches features.feature_names()": {
+    "pass": true,
+    "detail": "128 features"
+  },
+  "no identifier/label/date/source-flag/capacity column among features": {
+    "pass": true,
+    "detail": "[]"
+  },
+  "train: columns = metadata + features + labels": {
+    "pass": true,
+    "detail": ""
+  },
+  "test: columns = metadata + features + labels": {
+    "pass": true,
+    "detail": ""
+  },
+  "train: dates within approved window": {
+    "pass": true,
+    "detail": "2019-04-01..2019-05-24"
+  },
+  "train: no label window crosses into test (max date + 7 < 2019-06-01)": {
+    "pass": true,
+    "detail": "2019-05-31"
+  },
+  "train: label_primary_invalid == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: pos_with_sens_not_1 == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: fold_mismatch == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: rows_on_or_after_failure == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: pos_outside_1_7 == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: neg_with_failure_within_7 == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: hist_flag_inconsistent == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: diff1_without_both == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: mean7_with_short_history == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: missing_flag_vs_value_mismatch == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: source_flag_wrong == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: june17_masked_non_null == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: june18_diff1_non_null_masked == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "train: june17_window_mean7_non_null_masked == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: dates within approved window": {
+    "pass": true,
+    "detail": "2019-06-01..2019-06-23"
+  },
+  "test: label_primary_invalid == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: pos_with_sens_not_1 == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: fold_mismatch == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: rows_on_or_after_failure == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: pos_outside_1_7 == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: neg_with_failure_within_7 == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: hist_flag_inconsistent == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: diff1_without_both == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: mean7_with_short_history == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: missing_flag_vs_value_mismatch == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: source_flag_wrong == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: june17_masked_non_null == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: june18_diff1_non_null_masked == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "test: june17_window_mean7_non_null_masked == 0": {
+    "pass": true,
+    "detail": "0"
+  },
+  "quality-excluded drives absent from both files": {
+    "pass": true,
+    "detail": "[]"
+  },
+  "each serial has exactly one fold across files": {
+    "pass": true,
+    "detail": "0"
+  },
+  "drive-held-out: no drive in both train (fold!=k) and test (fold==k) for any k": {
+    "pass": true,
+    "detail": "fold is a deterministic function of serial_number"
+  },
+  "June 17 rows present in test with core attributes intact": {
+    "pass": true,
+    "detail": "rows=110524, smart_9 non-null=110504"
+  },
+  "train: positive_rows matches methodology": {
+    "pass": true,
+    "detail": "built=1,842 methodology=1,842"
+  },
+  "train: positive_drives matches methodology": {
+    "pass": true,
+    "detail": "built=305 methodology=305"
+  },
+  "train: negative_rows_primary matches methodology": {
+    "pass": true,
+    "detail": "built=5,743,219 methodology=5,743,219"
+  },
+  "train: negative_rows_sensitivity matches methodology": {
+    "pass": true,
+    "detail": "built=5,740,680 methodology=5,740,680"
+  },
+  "train: unknown_rows_sensitivity_within_primary_rows matches methodology": {
+    "pass": true,
+    "detail": "built=2,539 methodology=2,539"
+  },
+  "test: positive_rows matches methodology": {
+    "pass": true,
+    "detail": "built=997 methodology=997"
+  },
+  "test: positive_drives matches methodology": {
+    "pass": true,
+    "detail": "built=175 methodology=175"
+  },
+  "test: negative_rows_primary matches methodology": {
+    "pass": true,
+    "detail": "built=2,543,757 methodology=2,543,757"
+  },
+  "test: negative_rows_sensitivity matches methodology": {
+    "pass": true,
+    "detail": "built=2,542,168 methodology=2,542,168"
+  },
+  "test: unknown_rows_sensitivity_within_primary_rows matches methodology": {
+    "pass": true,
+    "detail": "built=1,589 methodology=1,589"
+  },
+  "count_comparison": [
+    {
+      "split": "train",
+      "count": "positive_rows",
+      "built": 1842,
+      "methodology": 1842,
+      "match": true
+    },
+    {
+      "split": "train",
+      "count": "positive_drives",
+      "built": 305,
+      "methodology": 305,
+      "match": true
+    },
+    {
+      "split": "train",
+      "count": "negative_rows_primary",
+      "built": 5743219,
+      "methodology": 5743219,
+      "match": true
+    },
+    {
+      "split": "train",
+      "count": "negative_rows_sensitivity",
+      "built": 5740680,
+      "methodology": 5740680,
+      "match": true
+    },
+    {
+      "split": "train",
+      "count": "unknown_rows_sensitivity_within_primary_rows",
+      "built": 2539,
+      "methodology": 2539,
+      "match": true
+    },
+    {
+      "split": "test",
+      "count": "positive_rows",
+      "built": 997,
+      "methodology": 997,
+      "match": true
+    },
+    {
+      "split": "test",
+      "count": "positive_drives",
+      "built": 175,
+      "methodology": 175,
+      "match": true
+    },
+    {
+      "split": "test",
+      "count": "negative_rows_primary",
+      "built": 2543757,
+      "methodology": 2543757,
+      "match": true
+    },
+    {
+      "split": "test",
+      "count": "negative_rows_sensitivity",
+      "built": 2542168,
+      "methodology": 2542168,
+      "match": true
+    },
+    {
+      "split": "test",
+      "count": "unknown_rows_sensitivity_within_primary_rows",
+      "built": 1589,
+      "methodology": 1589,
+      "match": true
+    }
+  ],
+  "independent past-only recomputation matches written features": {
+    "pass": true,
+    "detail": "19,422 rows of 300 drives; NaN-pattern mismatches=0; max rel err=4.92e-15"
+  },
+  "all_pass": true,
+  "counts_from_files": {
+    "train": {
+      "rows": 5745061,
+      "pos": 1842,
+      "neg": 5743219,
+      "sens_neg": 5740680,
+      "sens_pos": 1842,
+      "sens_unknown": 2539,
+      "label_primary_invalid": 0,
+      "pos_with_sens_not_1": 0,
+      "fold_mismatch": 0,
+      "rows_on_or_after_failure": 0,
+      "pos_outside_1_7": 0,
+      "neg_with_failure_within_7": 0,
+      "hist_flag_inconsistent": 0,
+      "diff1_without_both": 0,
+      "mean7_with_short_history": 0,
+      "missing_flag_vs_value_mismatch": 0,
+      "source_flag_wrong": 0,
+      "june17_rows": 0,
+      "june17_masked_non_null": 0,
+      "june18_diff1_non_null_masked": 0,
+      "june17_window_mean7_non_null_masked": 0
+    },
+    "test": {
+      "rows": 2544754,
+      "pos": 997,
+      "neg": 2543757,
+      "sens_neg": 2542168,
+      "sens_pos": 997,
+      "sens_unknown": 1589,
+      "label_primary_invalid": 0,
+      "pos_with_sens_not_1": 0,
+      "fold_mismatch": 0,
+      "rows_on_or_after_failure": 0,
+      "pos_outside_1_7": 0,
+      "neg_with_failure_within_7": 0,
+      "hist_flag_inconsistent": 0,
+      "diff1_without_both": 0,
+      "mean7_with_short_history": 0,
+      "missing_flag_vs_value_mismatch": 0,
+      "source_flag_wrong": 0,
+      "june17_rows": 110524,
+      "june17_masked_non_null": 0,
+      "june18_diff1_non_null_masked": 0,
+      "june17_window_mean7_non_null_masked": 0
+    }
+  },
+  "positive_drives": {
+    "train": 305,
+    "test": 175
+  }
+}

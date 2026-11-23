@@ -1,0 +1,193 @@
+Pass 1: labels from serial_number/failure ...
+  9,831,138 drive-days, 111,817 drives (42s)
+  2019-04-01 [train] rows=106,231 written=105,712 (50s)
+  2019-04-02 [train] rows=106,232 written=211,427 (61s)
+  2019-04-03 [train] rows=106,003 written=317,144 (73s)
+  2019-04-04 [train] rows=105,951 written=422,854 (84s)
+  2019-04-05 [train] rows=105,819 written=528,575 (110s)
+  2019-04-06 [train] rows=105,771 written=634,296 (136s)
+  2019-04-07 [train] rows=105,774 written=740,019 (162s)
+  2019-04-08 [train] rows=105,727 written=845,740 (176s)
+  2019-04-09 [train] rows=105,728 written=951,455 (194s)
+  2019-04-10 [train] rows=105,728 written=1,057,176 (211s)
+  2019-04-11 [train] rows=105,665 written=1,162,834 (228s)
+  2019-04-12 [train] rows=105,667 written=1,268,497 (259s)
+  2019-04-13 [train] rows=105,667 written=1,374,159 (285s)
+  2019-04-14 [train] rows=105,666 written=1,479,821 (314s)
+  2019-04-15 [train] rows=105,665 written=1,585,472 (355s)
+  2019-04-16 [train] rows=105,666 written=1,691,135 (397s)
+  2019-04-17 [train] rows=105,728 written=1,796,855 (439s)
+  2019-04-18 [train] rows=105,728 written=1,902,574 (481s)
+  2019-04-19 [train] rows=105,666 written=2,008,233 (523s)
+  2019-04-20 [train] rows=105,667 written=2,113,895 (564s)
+  2019-04-21 [train] rows=105,668 written=2,219,558 (600s)
+  2019-04-22 [train] rows=105,668 written=2,325,172 (642s)
+  2019-04-23 [train] rows=105,667 written=2,430,785 (684s)
+  2019-04-24 [train] rows=105,727 written=2,536,462 (726s)
+  2019-04-25 [train] rows=105,729 written=2,642,140 (768s)
+  2019-04-26 [train] rows=105,728 written=2,747,820 (807s)
+  2019-04-27 [train] rows=105,729 written=2,853,503 (849s)
+  2019-04-28 [train] rows=105,729 written=2,959,184 (889s)
+  2019-04-29 [train] rows=105,623 written=3,064,801 (919s)
+  2019-04-30 [train] rows=105,622 written=3,170,422 (960s)
+  2019-05-01 [train] rows=105,668 written=3,276,085 (981s)
+  2019-05-02 [train] rows=105,775 written=3,381,852 (997s)
+  2019-05-03 [train] rows=105,774 written=3,487,623 (1015s)
+  2019-05-04 [train] rows=106,995 written=3,594,614 (1038s)
+  2019-05-05 [train] rows=106,933 written=3,701,545 (1058s)
+  2019-05-06 [train] rows=106,934 written=3,808,463 (1075s)
+  2019-05-07 [train] rows=106,934 written=3,915,388 (1093s)
+  2019-05-08 [train] rows=106,935 written=4,022,316 (1110s)
+  2019-05-09 [train] rows=106,994 written=4,129,306 (1130s)
+  2019-05-10 [train] rows=106,995 written=4,236,295 (1147s)
+  2019-05-11 [train] rows=106,995 written=4,343,284 (1164s)
+  2019-05-12 [train] rows=106,994 written=4,450,276 (1181s)
+  2019-05-13 [train] rows=106,934 written=4,557,199 (1198s)
+  2019-05-14 [train] rows=106,994 written=4,664,180 (1215s)
+  2019-05-15 [train] rows=106,996 written=4,771,167 (1253s)
+  2019-05-16 [train] rows=108,216 written=4,879,379 (1293s)
+  2019-05-17 [train] rows=108,216 written=4,987,586 (1335s)
+  2019-05-18 [train] rows=108,217 written=5,095,800 (1375s)
+  2019-05-19 [train] rows=108,217 written=5,204,014 (1415s)
+  2019-05-20 [train] rows=108,217 written=5,312,223 (1453s)
+  2019-05-21 [train] rows=108,217 written=5,420,434 (1492s)
+  2019-05-22 [train] rows=108,217 written=5,528,642 (1533s)
+  2019-05-23 [train] rows=108,215 written=5,636,853 (1574s)
+  2019-05-24 [train] rows=108,216 written=5,745,061 (1612s)
+  2019-05-25 [purge] rows=108,216 written=0 (1613s)
+  2019-05-26 [purge] rows=108,217 written=0 (1614s)
+  2019-05-27 [purge] rows=109,437 written=0 (1614s)
+  2019-05-28 [purge] rows=109,435 written=0 (1615s)
+  2019-05-29 [purge] rows=109,435 written=0 (1616s)
+  2019-05-30 [purge] rows=109,437 written=0 (1617s)
+  2019-05-31 [purge] rows=109,391 written=0 (1618s)
+  2019-06-01 [test ] rows=110,610 written=110,607 (1657s)
+  2019-06-02 [test ] rows=110,610 written=221,209 (1695s)
+  2019-06-03 [test ] rows=110,609 written=331,809 (1734s)
+  2019-06-04 [test ] rows=110,656 written=442,453 (1772s)
+  2019-06-05 [test ] rows=110,655 written=553,093 (1812s)
+  2019-06-06 [test ] rows=110,656 written=663,735 (1850s)
+  2019-06-07 [test ] rows=110,714 written=774,423 (1888s)
+  2019-06-08 [test ] rows=110,717 written=885,115 (1927s)
+  2019-06-09 [test ] rows=110,717 written=995,801 (1964s)
+  2019-06-10 [test ] rows=110,715 written=1,106,495 (1979s)
+  2019-06-11 [test ] rows=110,654 written=1,217,133 (1997s)
+  2019-06-12 [test ] rows=110,655 written=1,327,777 (2035s)
+  2019-06-13 [test ] rows=110,659 written=1,438,427 (2073s)
+  2019-06-14 [test ] rows=110,655 written=1,549,081 (2112s)
+  2019-06-15 [test ] rows=110,655 written=1,659,731 (2150s)
+  2019-06-16 [test ] rows=110,593 written=1,770,319 (2189s)
+  2019-06-17 [test ] rows=110,532 written=1,880,843 (2221s)
+  2019-06-18 [test ] rows=110,595 written=1,991,422 (2251s)
+  2019-06-19 [test ] rows=110,699 written=2,102,110 (2281s)
+  2019-06-20 [test ] rows=110,702 written=2,212,797 (2294s)
+  2019-06-21 [test ] rows=110,640 written=2,323,428 (2308s)
+  2019-06-22 [test ] rows=110,701 written=2,434,122 (2323s)
+  2019-06-23 [test ] rows=110,702 written=2,544,754 (2339s)
+  2019-06-24 [tail ] rows=110,701 written=0 (2340s)
+  2019-06-25 [tail ] rows=110,701 written=0 (2340s)
+  2019-06-26 [tail ] rows=110,702 written=0 (2341s)
+  2019-06-27 [tail ] rows=110,701 written=0 (2341s)
+  2019-06-28 [tail ] rows=110,702 written=0 (2342s)
+  2019-06-29 [tail ] rows=110,702 written=0 (2342s)
+  2019-06-30 [tail ] rows=110,640 written=0 (2342s)
+{
+ "runtime_s": 2342.6,
+ "n_features": 128,
+ "counts": {
+  "train": {
+   "observation_rows": 5747437,
+   "positive_rows": 1842,
+   "negative_rows_primary": 5743219,
+   "unknown_rows_primary": 2091,
+   "excluded_failure_day_or_after": 285,
+   "negative_rows_sensitivity": 5740680,
+   "unknown_rows_sensitivity": 4630,
+   "unlabelled_rows": 0,
+   "history_complete_rows": 4983152,
+   "positive_rows_history_complete": 1636,
+   "rows_written": 5745061
+  },
+  "purge": {
+   "observation_rows": 763568,
+   "rows_written": 0,
+   "positive_rows": 0,
+   "negative_rows_primary": 0,
+   "unknown_rows_primary": 0,
+   "negative_rows_sensitivity": 0,
+   "unknown_rows_sensitivity": 0,
+   "excluded_failure_day_or_after": 0,
+   "history_complete_rows": 0,
+   "positive_rows_history_complete": 0
+  },
+  "test": {
+   "observation_rows": 2545101,
+   "positive_rows": 997,
+   "negative_rows_primary": 2543757,
+   "unknown_rows_primary": 209,
+   "excluded_failure_day_or_after": 138,
+   "negative_rows_sensitivity": 2542168,
+   "unknown_rows_sensitivity": 1798,
+   "unlabelled_rows": 0,
+   "history_complete_rows": 2530974,
+   "positive_rows_history_complete": 988,
+   "rows_written": 2544754
+  },
+  "tail": {
+   "observation_rows": 774849,
+   "rows_written": 0,
+   "positive_rows": 0,
+   "negative_rows_primary": 0,
+   "unknown_rows_primary": 0,
+   "negative_rows_sensitivity": 0,
+   "unknown_rows_sensitivity": 0,
+   "excluded_failure_day_or_after": 0,
+   "history_complete_rows": 0,
+   "positive_rows_history_complete": 0
+  }
+ },
+ "positive_drives": {
+  "train": 305,
+  "test": 175,
+  "purge": 0,
+  "tail": 0
+ },
+ "june17": {
+  "masked_columns": [
+   "smart_7_raw",
+   "smart_188_raw",
+   "smart_240_raw",
+   "smart_241_raw",
+   "smart_242_raw"
+  ],
+  "not_read_damaged_columns": [
+   "smart_231_raw",
+   "smart_232_raw"
+  ],
+  "non_null_before_mask": {
+   "smart_7_raw": 110456,
+   "smart_188_raw": 80816,
+   "smart_240_raw": 83109,
+   "smart_241_raw": 81402,
+   "smart_242_raw": 81402
+  },
+  "rows_written": 110524,
+  "positive_rows": 45
+ },
+ "quality_excluded_serials": {
+  "57QEWPXKT": "records after failure record",
+  "ZA14EK1F": "failure recorded after 2-day observation gap",
+  "VKGMHB0X": "failure recorded after 2-day observation gap",
+  "ZCH0D3BM": "failure recorded after 2-day observation gap",
+  "ZCH0CJC3": "failure row dated 6/15/19 inside 2019-06-17.csv (date conflict)"
+ },
+ "horizon_days": 7,
+ "file_sizes_bytes": {
+  "dataset_split_summary.csv": 1145,
+  "drive_heldout_folds.csv": 1446952,
+  "test_chronological.csv.gz": 558316376,
+  "test_sensitivity.csv.gz": 15309460,
+  "train_chronological.csv.gz": 1234716747,
+  "train_sensitivity.csv.gz": 34222171
+ }
+}

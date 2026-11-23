@@ -1,0 +1,15 @@
+configuration,split,fold,observation_rows,examples_written,positive_rows,positive_drives,negative_rows_primary,unknown_rows_primary_excluded,negative_rows_sensitivity,unknown_rows_sensitivity_excluded,failure_day_or_after_excluded,history_complete_7d_rows,positive_rows_history_complete_7d
+chronological,train,,5747437.0,5745061,1842,305,5743219,2091.0,5740680.0,4630.0,285.0,4983152.0,1636.0
+chronological,purge,,763568.0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0
+chronological,test,,2545101.0,2544754,997,175,2543757,209.0,2542168.0,1798.0,138.0,2530974.0,988.0
+chronological,tail,,774849.0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0
+drive_heldout,train,0,,4593556,1460,243,4592096,,,,,,
+drive_heldout,test,0,,510010,219,39,509791,,,,,,
+drive_heldout,train,1,,4606222,1444,240,4604778,,,,,,
+drive_heldout,test,1,,505121,163,27,504958,,,,,,
+drive_heldout,train,2,,4600120,1474,246,4598646,,,,,,
+drive_heldout,test,2,,506070,225,41,505845,,,,,,
+drive_heldout,train,3,,4593687,1474,244,4592213,,,,,,
+drive_heldout,test,3,,510091,207,37,509884,,,,,,
+drive_heldout,train,4,,4586659,1516,247,4585143,,,,,,
+drive_heldout,test,4,,513462,183,31,513279,,,,,,

@@ -1,0 +1,9 @@
+item,definition,count
+Job lengths L,24 h / 72 h / 168 h with p = 0.5 / 0.3 / 0.2 (crc32(serial|j) mod 10),
+Arrivals,submit(j+1) = submit(j) + L(j) / ρ from the host's first day; FIFO queue per host,
+Generation window,jobs generated while submit < 30 days; all jobs run to completion,
+Deadline,"submit + 1.5 L (late jobs counted, never dropped)",
+Identical across policies,"job ids, lengths, submit times, failure trace, risk trace",
+Scenario ρ = 0.9 (primary),10 % nominal idle slack,"1,141,653 jobs"
+Scenario ρ = 1.0 (sensitivity),"back-to-back nominal arrivals, no slack","1,259,916 jobs"
+Hosts / failing hosts,same in both scenarios,"110,848 / 175"

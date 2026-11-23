@@ -1,0 +1,32 @@
+{
+ "0.9": {
+  "shards_done": 56,
+  "shards": 56,
+  "hosts": 110848,
+  "jobs": 1141653,
+  "failures": 175,
+  "indep_failures": 175,
+  "checks_per_shard": 16,
+  "shards_all_pass": 56,
+  "failed_checks": 0,
+  "compute_h": 2.6806666666666668,
+  "elapsed_h": 1.3677777777777778,
+  "heap": 431,
+  "wall_min_med_max": "89 / 185.8 / 239"
+ },
+ "1.0": {
+  "shards_done": 56,
+  "shards": 56,
+  "hosts": 110848,
+  "jobs": 1259916,
+  "failures": 175,
+  "indep_failures": 175,
+  "checks_per_shard": 16,
+  "shards_all_pass": 56,
+  "failed_checks": 0,
+  "compute_h": 3.2646388888888884,
+  "elapsed_h": 1.666388888888889,
+  "heap": 417,
+  "wall_min_med_max": "120 / 138.5 / 530"
+ }
+}

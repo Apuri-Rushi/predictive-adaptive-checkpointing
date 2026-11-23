@@ -1,0 +1,230 @@
+{
+  "created_utc": "2026-11-22T18:19:33.634057+00:00",
+  "sklearn_version": "1.7.2",
+  "target": "P(drive records a failure on day t+1..t+7 | SMART history up to day t)",
+  "features_in_order": [
+    "smart_1_raw",
+    "smart_3_raw",
+    "smart_4_raw",
+    "smart_5_raw",
+    "smart_7_raw",
+    "smart_9_raw",
+    "smart_10_raw",
+    "smart_12_raw",
+    "smart_192_raw",
+    "smart_193_raw",
+    "smart_194_raw",
+    "smart_197_raw",
+    "smart_198_raw",
+    "smart_199_raw",
+    "smart_187_raw",
+    "smart_188_raw",
+    "smart_190_raw",
+    "smart_240_raw",
+    "smart_241_raw",
+    "smart_242_raw",
+    "smart_1_raw_prev1",
+    "smart_3_raw_prev1",
+    "smart_4_raw_prev1",
+    "smart_5_raw_prev1",
+    "smart_7_raw_prev1",
+    "smart_9_raw_prev1",
+    "smart_10_raw_prev1",
+    "smart_12_raw_prev1",
+    "smart_192_raw_prev1",
+    "smart_193_raw_prev1",
+    "smart_194_raw_prev1",
+    "smart_197_raw_prev1",
+    "smart_198_raw_prev1",
+    "smart_199_raw_prev1",
+    "smart_187_raw_prev1",
+    "smart_188_raw_prev1",
+    "smart_190_raw_prev1",
+    "smart_240_raw_prev1",
+    "smart_241_raw_prev1",
+    "smart_242_raw_prev1",
+    "smart_1_raw_diff1",
+    "smart_3_raw_diff1",
+    "smart_4_raw_diff1",
+    "smart_5_raw_diff1",
+    "smart_7_raw_diff1",
+    "smart_9_raw_diff1",
+    "smart_10_raw_diff1",
+    "smart_12_raw_diff1",
+    "smart_192_raw_diff1",
+    "smart_193_raw_diff1",
+    "smart_194_raw_diff1",
+    "smart_197_raw_diff1",
+    "smart_198_raw_diff1",
+    "smart_199_raw_diff1",
+    "smart_187_raw_diff1",
+    "smart_188_raw_diff1",
+    "smart_190_raw_diff1",
+    "smart_240_raw_diff1",
+    "smart_241_raw_diff1",
+    "smart_242_raw_diff1",
+    "smart_1_raw_diff7",
+    "smart_3_raw_diff7",
+    "smart_4_raw_diff7",
+    "smart_5_raw_diff7",
+    "smart_7_raw_diff7",
+    "smart_9_raw_diff7",
+    "smart_10_raw_diff7",
+    "smart_12_raw_diff7",
+    "smart_192_raw_diff7",
+    "smart_193_raw_diff7",
+    "smart_194_raw_diff7",
+    "smart_197_raw_diff7",
+    "smart_198_raw_diff7",
+    "smart_199_raw_diff7",
+    "smart_187_raw_diff7",
+    "smart_188_raw_diff7",
+    "smart_190_raw_diff7",
+    "smart_240_raw_diff7",
+    "smart_241_raw_diff7",
+    "smart_242_raw_diff7",
+    "smart_1_raw_mean7",
+    "smart_3_raw_mean7",
+    "smart_4_raw_mean7",
+    "smart_5_raw_mean7",
+    "smart_7_raw_mean7",
+    "smart_9_raw_mean7",
+    "smart_10_raw_mean7",
+    "smart_12_raw_mean7",
+    "smart_192_raw_mean7",
+    "smart_193_raw_mean7",
+    "smart_194_raw_mean7",
+    "smart_197_raw_mean7",
+    "smart_198_raw_mean7",
+    "smart_199_raw_mean7",
+    "smart_187_raw_mean7",
+    "smart_188_raw_mean7",
+    "smart_190_raw_mean7",
+    "smart_240_raw_mean7",
+    "smart_241_raw_mean7",
+    "smart_242_raw_mean7",
+    "smart_1_raw_std7",
+    "smart_3_raw_std7",
+    "smart_4_raw_std7",
+    "smart_5_raw_std7",
+    "smart_7_raw_std7",
+    "smart_9_raw_std7",
+    "smart_10_raw_std7",
+    "smart_12_raw_std7",
+    "smart_192_raw_std7",
+    "smart_193_raw_std7",
+    "smart_194_raw_std7",
+    "smart_197_raw_std7",
+    "smart_198_raw_std7",
+    "smart_199_raw_std7",
+    "smart_187_raw_std7",
+    "smart_188_raw_std7",
+    "smart_190_raw_std7",
+    "smart_240_raw_std7",
+    "smart_241_raw_std7",
+    "smart_242_raw_std7",
+    "smart_187_raw_missing",
+    "smart_188_raw_missing",
+    "smart_190_raw_missing",
+    "smart_240_raw_missing",
+    "smart_241_raw_missing",
+    "smart_242_raw_missing",
+    "n_obs_prev7",
+    "history_complete_7d"
+  ],
+  "n_features": 128,
+  "model_params": {
+    "n_estimators": 300,
+    "max_features": "sqrt",
+    "bootstrap": true,
+    "n_jobs": -1,
+    "random_state": 20190401,
+    "class_weight": null,
+    "max_depth": 20,
+    "min_samples_leaf": 1
+  },
+  "selection": {
+    "metric": "pr_auc",
+    "grid": [
+      {
+        "max_depth": 10,
+        "min_samples_leaf": 1
+      },
+      {
+        "max_depth": 10,
+        "min_samples_leaf": 5
+      },
+      {
+        "max_depth": 10,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": 20,
+        "min_samples_leaf": 1
+      },
+      {
+        "max_depth": 20,
+        "min_samples_leaf": 5
+      },
+      {
+        "max_depth": 20,
+        "min_samples_leaf": 20
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 1
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 5
+      },
+      {
+        "max_depth": null,
+        "min_samples_leaf": 20
+      }
+    ]
+  },
+  "sampling": {
+    "seed": 20190401,
+    "neg_per_pos": 20,
+    "strata": [
+      "date",
+      "model"
+    ],
+    "train_rows_total": 5745061,
+    "positives_total": 1842,
+    "negatives_total": 5743219,
+    "negatives_sampled": 36840,
+    "strata_count": 2099,
+    "strata_with_zero_quota": 1127,
+    "max_abs_share_diff_by_date": 6.094320609279988e-05,
+    "max_abs_share_diff_by_model": 0.0008512991681151731
+  },
+  "probability_correction": {
+    "formula": "p = beta*s / (beta*s + 1 - s)",
+    "beta": 0.006414521194472995,
+    "beta_internal_validation_model": 0.006406592161626127,
+    "train_population_prevalence": 0.00032062322749923806,
+    "train_sample_prevalence": 0.047619047619047616
+  },
+  "threshold": {
+    "value_on_corrected_scale": 0.013679154399218789,
+    "rule": "max_f1_on_validation",
+    "selected_on": "validation 2019-05-11..2019-05-24"
+  },
+  "internal_validation": {
+    "fit": [
+      "2019-04-01",
+      "2019-05-03"
+    ],
+    "purge": [
+      "2019-05-04",
+      "2019-05-10"
+    ],
+    "validate": [
+      "2019-05-11",
+      "2019-05-24"
+    ]
+  },
+  "final_fit_seconds": 22.779831409454346
+}

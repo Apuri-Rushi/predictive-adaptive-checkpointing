@@ -1,0 +1,4 @@
+tier,score_range,boundary_source,E3_interval_rule,E3_interval_h_T0_1h,E3_interval_h_T0_4h,E3_interval_h_T0_12h,E3_interval_h_T0_24h,E3_interval_h_T0_72h,validation_design_share_pct,june_share_pct_all_hosts
+LOW,p < 0.000234,validation P90,2.65 × T0,2.65,10.6,31.799999999999997,63.599999999999994,190.79999999999998,90.0,54.09
+MEDIUM,0.000234 ≤ p < 0.001732,,T0,1.0,4.0,12.0,24.0,72.0,9.0,39.305
+HIGH,p ≥ 0.001732,validation P99,T0 / 4.9,0.2040816326530612,0.8163265306122448,2.4489795918367343,4.897959183673469,14.693877551020407,1.0,6.605

@@ -1,0 +1,233 @@
+% Asset preview project (NOT the paper). Compiles on Overleaf with pdfLaTeX + BibTeX.
+\documentclass[conference]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{cite}
+\input{captions_figures}
+
+\begin{document}
+\title{Asset Preview: Predictive Disk Failure-Aware Adaptive Checkpointing}
+\author{\IEEEauthorblockN{Evidence package --- not the manuscript}}
+\maketitle
+
+\begin{abstract}
+This document only typesets the generated figures and tables so that their size, legibility and numbering can be checked in IEEE two-column format. It contains no paper text.
+\end{abstract}
+
+Cross-reference test: Fig.~\ref{fig:system_architecture}, Fig.~\ref{fig:ml_pipeline}, Fig.~\ref{fig:adaptive}, Fig.~\ref{fig:cloudsim}, Fig.~\ref{fig:execution_flow}, Fig.~\ref{fig:experimental_design}, Fig.~\ref{fig:rf_roc}, Fig.~\ref{fig:rf_pr}, Fig.~\ref{fig:deadline_rho09}, Fig.~\ref{fig:tradeoff_rho09}, Fig.~\ref{fig:paired_rho09}, Fig.~\ref{fig:failing_deadline}, Fig.~\ref{fig:tier_occupancy}, Fig.~\ref{fig:lost_tier_rho09}; Tables~\ref{tab:dataset}--\ref{tab:execution}. Method citations: \cite{breiman2001random,calheiros2011cloudsim,young1974first,daly2006higher,elkan2001foundations,dalpozzolo2015calibrating,pedregosa2011scikit,efron1993bootstrap,pinheiro2007failure,backblaze_data}.
+
+\section{Figures and tables recommended for the main paper}
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/fig01_system_architecture.pdf}
+  \caption{\CapFigZeroOneSystemArchitecture}
+  \label{fig:system_architecture}
+\end{figure*}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig02_ml_pipeline.pdf}
+  \caption{\CapFigZeroTwoMlPipeline}
+  \label{fig:ml_pipeline}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig03_adaptive_checkpointing.pdf}
+  \caption{\CapFigZeroThreeAdaptiveCheckpointing}
+  \label{fig:adaptive}
+\end{figure}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/fig04_cloudsim_integration.pdf}
+  \caption{\CapFigZeroFourCloudsimIntegration}
+  \label{fig:cloudsim}
+\end{figure*}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/fig05_execution_flow.pdf}
+  \caption{\CapFigZeroFiveExecutionFlow}
+  \label{fig:execution_flow}
+\end{figure*}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/fig06_experimental_design.pdf}
+  \caption{\CapFigZeroSixExperimentalDesign}
+  \label{fig:experimental_design}
+\end{figure*}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g01_rf_roc_curve.pdf}
+  \caption{\CapGZeroOneRfRocCurve}
+  \label{fig:rf_roc}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g02_rf_precision_recall_curve.pdf}
+  \caption{\CapGZeroTwoRfPrecisionRecallCurve}
+  \label{fig:rf_pr}
+\end{figure}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/g08_deadline_miss_vs_T0_rho09.pdf}
+  \caption{\CapGZeroEightDeadlineMissVsTZeroRhoZeroNine}
+  \label{fig:deadline_rho09}
+\end{figure*}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g10_overhead_vs_lost_tradeoff_rho09.pdf}
+  \caption{\CapGTenOverheadVsLostTradeoffRhoZeroNine}
+  \label{fig:tradeoff_rho09}
+\end{figure}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/g12_paired_E3_vs_E2_rho09.pdf}
+  \caption{\CapGTwelvePairedEThreeVsETwoRhoZeroNine}
+  \label{fig:paired_rho09}
+\end{figure*}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=0.75\textwidth]{figures/g16_failing_host_deadline_miss_both_rho.pdf}
+  \caption{\CapGSixteenFailingHostDeadlineMissBothRho}
+  \label{fig:failing_deadline}
+\end{figure*}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g17_tier_occupancy.pdf}
+  \caption{\CapGSeventeenTierOccupancy}
+  \label{fig:tier_occupancy}
+\end{figure}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/g19_lost_work_by_tier_rho09.pdf}
+  \caption{\CapGNineteenLostWorkByTierRhoZeroNine}
+  \label{fig:lost_tier_rho09}
+\end{figure*}
+
+\input{tables/tab01_dataset}
+\input{tables/tab04_rf_performance}
+\input{tables/tab05_tiers}
+\input{tables/tab06_cloudsim_config}
+\input{tables/tab07_workload}
+\input{tables/tab08_policy_rho09}
+\input{tables/tab09_paired_rho09}
+\input{tables/tab11_paired_rho10}
+\input{tables/tab12_failing_nonfailing_rho09}
+\input{tables/tab13_tier_occupancy}
+\input{tables/tab15_execution_validation}
+\clearpage
+\section{Supplementary figures and tables}
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.8\columnwidth]{figures/g03_rf_confusion_matrix.pdf}
+  \caption{\CapGZeroThreeRfConfusionMatrix}
+  \label{fig:rf_cm}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g04_rf_score_distribution.pdf}
+  \caption{\CapGZeroFourRfScoreDistribution}
+  \label{fig:rf_scores}
+\end{figure}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/g05_rf_feature_importance.pdf}
+  \caption{\CapGZeroFiveRfFeatureImportance}
+  \label{fig:rf_importance}
+\end{figure*}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g06_overhead_vs_T0_rho09.pdf}
+  \caption{\CapGZeroSixOverheadVsTZeroRhoZeroNine}
+  \label{fig:overhead_rho09}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g07_lost_work_vs_T0_rho09.pdf}
+  \caption{\CapGZeroSevenLostWorkVsTZeroRhoZeroNine}
+  \label{fig:lost_rho09}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g09_wasted_time_all_policies_rho09.pdf}
+  \caption{\CapGZeroNineWastedTimeAllPoliciesRhoZeroNine}
+  \label{fig:wasted_rho09}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g11_checkpoints_per_job_rho09.pdf}
+  \caption{\CapGElevenCheckpointsPerJobRhoZeroNine}
+  \label{fig:ckpts_rho09}
+\end{figure}
+
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/g12_paired_E3_vs_E2_rho10.pdf}
+  \caption{\CapGTwelvePairedEThreeVsETwoRhoOneZero}
+  \label{fig:paired_rho10}
+\end{figure*}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g13_deadline_miss_vs_T0_rho10.pdf}
+  \caption{\CapGThirteenDeadlineMissVsTZeroRhoOneZero}
+  \label{fig:deadline_rho10}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g14_queueing_vs_T0_rho10.pdf}
+  \caption{\CapGFourteenQueueingVsTZeroRhoOneZero}
+  \label{fig:queue_rho10}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g15_lost_work_vs_T0_rho10.pdf}
+  \caption{\CapGFifteenLostWorkVsTZeroRhoOneZero}
+  \label{fig:lost_rho10}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.8\columnwidth]{figures/g18_failures_by_tier.pdf}
+  \caption{\CapGEighteenFailuresByTier}
+  \label{fig:failures_tier}
+\end{figure}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g20_overhead_by_tier_rho09.pdf}
+  \caption{\CapGTwentyOverheadByTierRhoZeroNine}
+  \label{fig:overhead_tier_rho09}
+\end{figure}
+
+\input{tables/tab02_split}
+\input{tables/tab03_rf_config}
+\input{tables/tab10_policy_rho10}
+\input{tables/tab12b_failing_nonfailing_rho10}
+\input{tables/tab14_lost_by_tier_rho09}
+\input{tables/tab14b_lost_by_tier_rho10}
+\bibliographystyle{IEEEtran}
+\bibliography{references/references}
+\end{document}

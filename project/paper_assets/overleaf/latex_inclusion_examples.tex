@@ -1,0 +1,26 @@
+% ================================================================
+% Reusable inclusion examples (copy into the manuscript).
+% Preamble needs: \usepackage{graphicx,booktabs,amsmath,url}
+% ================================================================
+
+% --- single-column figure ---
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g10_overhead_vs_lost_tradeoff_rho09.pdf}
+  \caption{\CapGTenOverheadVsLostTradeoffRhoZeroNine}
+  \label{fig:tradeoff_rho09}
+\end{figure}
+
+% --- full-width figure (two columns) ---
+\begin{figure*}[!t]
+  \centering
+  \includegraphics[width=\textwidth]{figures/fig01_system_architecture.pdf}
+  \caption{\CapFigZeroOneSystemArchitecture}
+  \label{fig:system_architecture}
+\end{figure*}
+
+% --- table (each .tex file already contains table/table*, caption and label) ---
+\input{tables/tab09_paired_rho09}
+
+% --- cross-references ---
+% As shown in Fig.~\ref{fig:tradeoff_rho09} and Table~\ref{tab:paired_rho09}, ...

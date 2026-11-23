@@ -1,0 +1,24 @@
+[      0s | RSS    128 MB] python 3.10.11, scikit-learn 1.7.2, 128 features, 12 CPUs
+[      0s | RSS    130 MB] Step 1: stratified negative sampling (training period only)
+[    112s | RSS    601 MB]   sampling plan: 1,842 positives, 36,840 of 5,743,219 negatives across 2,099 date x model strata
+[    206s | RSS    365 MB]   extracted 38,682 sampled rows
+[    206s | RSS    282 MB] Step 2: internal fit set 2019-04-01..2019-05-03: 1,058 positives, 22,337 negatives (beta_fit=0.00640659); purge 2019-05-04..2019-05-10; validation 2019-05-11..2019-05-24 at natural prevalence
+[    214s | RSS    299 MB]   fitted {'max_depth': 10, 'min_samples_leaf': 1} in 7.7s
+[    220s | RSS    301 MB]   fitted {'max_depth': 10, 'min_samples_leaf': 5} in 6.5s
+[    226s | RSS    302 MB]   fitted {'max_depth': 10, 'min_samples_leaf': 20} in 6.2s
+[    238s | RSS    314 MB]   fitted {'max_depth': 20, 'min_samples_leaf': 1} in 11.7s
+[    249s | RSS    320 MB]   fitted {'max_depth': 20, 'min_samples_leaf': 5} in 11.2s
+[    259s | RSS    326 MB]   fitted {'max_depth': 20, 'min_samples_leaf': 20} in 10.3s
+[    275s | RSS    349 MB]   fitted {'max_depth': None, 'min_samples_leaf': 1} in 15.5s
+[    288s | RSS    365 MB]   fitted {'max_depth': None, 'min_samples_leaf': 5} in 13.3s
+[    299s | RSS    374 MB]   fitted {'max_depth': None, 'min_samples_leaf': 20} in 10.7s
+[    460s | RSS    623 MB]   validation rows 1,508,766, positives 481 (107 drives)
+[    473s | RSS    658 MB]   selected {'max_depth': 20, 'min_samples_leaf': 1} by validation pr_auc=0.0485
+[    473s | RSS    669 MB]   threshold (max F1 on validation, corrected scale) = 0.0136792  F1=0.1352 P=0.0949 R=0.2349
+[    476s | RSS    715 MB]   permutation importance on validation subsample: 50,869 rows (481 positives)
+[    645s | RSS    480 MB]   permutation importance done
+[    645s | RSS    480 MB] Step 3: refit {'max_depth': 20, 'min_samples_leaf': 1} on full training sample (38,682 rows, beta=0.00641452)
+[    668s | RSS    530 MB]   final model fitted in 22.8s; saved (3.8 MB)
+[    668s | RSS    530 MB] Step 4: scoring the June test set once (natural prevalence)
+[    725s | RSS   1017 MB]   test rows 2,544,754, positives 997 (175 drives)
+[    768s | RSS   1181 MB] done. peak RSS 1017 MB, total 768s

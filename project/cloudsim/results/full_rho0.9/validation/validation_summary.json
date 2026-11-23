@@ -1,0 +1,15 @@
+{
+  "run_dir": "results/full_rho0.9",
+  "utilization": 0.9,
+  "shards_expected": 56,
+  "shards_done_in_manifest": 56,
+  "shards_validated": 56,
+  "shards_all_pass": 56,
+  "failed_checks": {},
+  "total_hosts_planned_jobs": 1141653,
+  "total_failures": 175,
+  "independent_total_june_failures_in_pool": 175,
+  "total_wall_hours": 2.68,
+  "max_peak_heap_mb": 431,
+  "all_pass": true
+}

@@ -1,0 +1,14 @@
+characteristic,value
+Source,"Backblaze hard-drive statistics, Q2 2019 (daily SMART snapshots)"
+Observation period,2019-04-01 to 2019-06-30
+Daily files,91 / 91
+Drive-day records,"9,831,138"
+Unique drives (serial numbers),"111,817"
+Drive models,42
+Failure records (= failed drives),500
+Row-level failure rate,"0.0051 %  (1 : 19,662)"
+Annualised failure rate,1.86
+Daily drive count (min / median / max),"105,624 / 108,216 / 110,718"
+Columns,129  (5 identifier columns + 124 SMART columns)
+SMART raw attributes used,"20 (14 core, ≤5 % missing; 6 partial: 187, 188, 190, 240, 241, 242)"
+Known file anomaly,"2019-06-17.csv spreadsheet-altered (CR-only, non-ISO dates, scientific notation); damaged columns set to NaN"

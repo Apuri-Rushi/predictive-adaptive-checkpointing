@@ -1,0 +1,210 @@
+[
+ {
+  "number": 1,
+  "stem": "tab01_dataset",
+  "label": "tab:dataset",
+  "caption": "Backblaze Q2 2019 dataset characteristics.",
+  "wide": false,
+  "sources": [
+   "project/ml/results/dataset_audit_revalidation/dataset_summary.txt",
+   "project/ml/processed/feature_manifest.md"
+  ],
+  "notes": ""
+ },
+ {
+  "number": 2,
+  "stem": "tab02_split",
+  "label": "tab:split",
+  "caption": "Preprocessing and chronological split (7-day horizon).",
+  "wide": true,
+  "sources": [
+   "project/ml/processed/dataset_split_summary.csv",
+   "project/ml/preprocessing/config.py",
+   "project/ml/results/dataset_audit_revalidation/quality_excluded_drives.csv"
+  ],
+  "notes": "Positive: the drive records a failure on day t+1 \u2026 t+7. Primary negative: the drive is still observed on or after t+7; rows with shorter follow-up are excluded (censored). 5 drives with data-quality problems are excluded. Failure-day rows are not examples. Internal validation for model selection used 2019-04-01 \u2013 05-03 (fit), 05-04 \u2013 05-10 (purge), 05-11 \u2013 05-24 (validation), all inside the training period."
+ },
+ {
+  "number": 3,
+  "stem": "tab03_rf_config",
+  "label": "tab:rf_config",
+  "caption": "Random Forest model configuration.",
+  "wide": false,
+  "sources": [
+   "project/ml/models/random_forest_7d_metadata.json",
+   "project/ml/training/rf_config.py"
+  ],
+  "notes": ""
+ },
+ {
+  "number": 4,
+  "stem": "tab04_rf_performance",
+  "label": "tab:rf_performance",
+  "caption": "Random Forest predictive performance (7-day horizon).",
+  "wide": false,
+  "sources": [
+   "project/ml/results/model_evaluation/validation_metrics.json",
+   "project/ml/results/model_evaluation/test_metrics.json"
+  ],
+  "notes": "Validation: 2019-05-11 \u2013 05-24 (internal-validation model, used to choose hyper-parameters and the threshold 0.01368). Test: June 1 \u2013 23, evaluated once with the final model. Row level: each drive-day is one prediction. Drive level: a failed drive counts as detected if it has at least one alarm in its 7-day pre-failure window. A random ranking has PR-AUC equal to the prevalence."
+ },
+ {
+  "number": 5,
+  "stem": "tab05_tiers",
+  "label": "tab:tiers",
+  "caption": "Risk tiers and adaptive checkpoint-interval rules (E3).",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/research/src/ckpt/policy/RiskTierClassifier.java",
+   "project/cloudsim/research/src/ckpt/policy/Policies.java",
+   "project/cloudsim/results/full_rho0.9/analysis/tier_occupancy.csv"
+  ],
+  "notes": "p is the prior-corrected 7-day failure score. Boundaries are the P90 (0.000234) and P99 (0.001732) of internal-validation scores (May 11 \u2013 24) and were not tuned on June data. The score of day d sets the tier from 00:00 of day d+1 (carried forward if missing; MEDIUM before any score and on spare hosts). E2 uses \u03c4 = T0 for every tier; E1 never checkpoints. Design share = intended share on validation; June share = observed share of host-days."
+ },
+ {
+  "number": 6,
+  "stem": "tab06_cloudsim_config",
+  "label": "tab:cloudsim_config",
+  "caption": "CloudSim simulation configuration.",
+  "wide": false,
+  "sources": [
+   "project/cloudsim/research/src/ckpt/sim/SimParams.java",
+   "project/cloudsim/results/full_rho0.9/run_config.json",
+   "project/cloudsim/research/src/ckpt/sim/SimulationRunner.java",
+   "project/cloudsim/research/src/ckpt/ExperimentRunner.java"
+  ],
+  "notes": ""
+ },
+ {
+  "number": 7,
+  "stem": "tab07_workload",
+  "label": "tab:workload",
+  "caption": "Workload model and experimental scenarios.",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/research/src/ckpt/trace/WorkloadGenerator.java",
+   "project/cloudsim/results/full_rho0.9/analysis/analysis_meta.json",
+   "project/cloudsim/results/full_rho1.0/analysis/analysis_meta.json"
+  ],
+  "notes": "Job counts differ between scenarios because \u03c1 changes the submit spacing; raw totals are therefore not compared across scenarios."
+ },
+ {
+  "number": 8,
+  "stem": "tab08_policy_rho09",
+  "label": "tab:policy_rho09",
+  "caption": "Overall policy comparison, \u03c1 = 0.9 (primary).",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho0.9/analysis/policy_summary.csv"
+  ],
+  "notes": "\u03c1 = 0.9, all 110,848 hosts, 1,141,653 jobs, 175 failures. Miss % = late jobs / jobs. Lost = computation lost to failures. Overhead = 300 s \u00d7 completed checkpoint writes (writes cut short by a failure are counted in Waste). Ovh. % and Waste % are percentages of useful compute (sum of job lengths); Waste = overhead + lost + interrupted writes + recovery. Queue = mean waiting time before a job starts. Lost-work CIs: paired host-clustered bootstrap (B = 2,000)."
+ },
+ {
+  "number": 9,
+  "stem": "tab09_paired_rho09",
+  "label": "tab:paired_rho09",
+  "caption": "Paired E3 \u2212 E2 comparison at equal T0, \u03c1 = 0.9, all hosts.",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho0.9/analysis/paired_comparisons.csv"
+  ],
+  "notes": "Paired within \u03c1 = 0.9: E2 and E3 at the same T0 run the identical workload, failures and risk trace. \u0394 = E3 \u2212 E2; lower is favourable for every metric. \u0394 % = \u0394 / E2 (given only for totals; deadline and queue differences are absolute, in percentage points or h/job). 95 % CI: paired host-clustered Poisson bootstrap (B = 2,000, seed 20190601) on the difference; shards are not treated as samples. Intervals are not adjusted for multiple comparisons and are descriptive only; no significance is claimed. Lost-work intervals rest on 175 failure events and are wide."
+ },
+ {
+  "number": 10,
+  "stem": "tab10_policy_rho10",
+  "label": "tab:policy_rho10",
+  "caption": "Overall policy comparison, \u03c1 = 1.0 (saturated sensitivity).",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho1.0/analysis/policy_summary.csv"
+  ],
+  "notes": "\u03c1 = 1.0, all 110,848 hosts, 1,259,916 jobs, 175 failures. Miss % = late jobs / jobs. Lost = computation lost to failures. Overhead = 300 s \u00d7 completed checkpoint writes (writes cut short by a failure are counted in Waste). Ovh. % and Waste % are percentages of useful compute (sum of job lengths); Waste = overhead + lost + interrupted writes + recovery. Queue = mean waiting time before a job starts. Lost-work CIs: paired host-clustered bootstrap (B = 2,000)."
+ },
+ {
+  "number": 11,
+  "stem": "tab11_paired_rho10",
+  "label": "tab:paired_rho10",
+  "caption": "Paired E3 \u2212 E2 comparison at equal T0, \u03c1 = 1.0, all hosts.",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho1.0/analysis/paired_comparisons.csv"
+  ],
+  "notes": "Paired within \u03c1 = 1.0: E2 and E3 at the same T0 run the identical workload, failures and risk trace. \u0394 = E3 \u2212 E2; lower is favourable for every metric. \u0394 % = \u0394 / E2 (given only for totals; deadline and queue differences are absolute, in percentage points or h/job). 95 % CI: paired host-clustered Poisson bootstrap (B = 2,000, seed 20190601) on the difference; shards are not treated as samples. Intervals are not adjusted for multiple comparisons and are descriptive only; no significance is claimed. Lost-work intervals rest on 175 failure events and are wide."
+ },
+ {
+  "number": 12,
+  "stem": "tab12_failing_nonfailing_rho09",
+  "label": "tab:strata_rho09",
+  "caption": "Failing versus non-failing hosts, \u03c1 = 0.9.",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho0.9/analysis/policy_summary.csv"
+  ],
+  "notes": "\u03c1 = 0.9. Failing hosts: the 175 hosts whose drive failed in June (one failure each); non-failing: 110,673 hosts. Non-failing hosts lose no work by construction. CI: host-clustered bootstrap within the stratum."
+ },
+ {
+  "number": "12b",
+  "stem": "tab12b_failing_nonfailing_rho10",
+  "label": "tab:strata_rho10",
+  "caption": "Failing versus non-failing hosts, \u03c1 = 1.0.",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho1.0/analysis/policy_summary.csv"
+  ],
+  "notes": "\u03c1 = 1.0. Failing hosts: the 175 hosts whose drive failed in June (one failure each); non-failing: 110,673 hosts. Non-failing hosts lose no work by construction. CI: host-clustered bootstrap within the stratum."
+ },
+ {
+  "number": 13,
+  "stem": "tab13_tier_occupancy",
+  "label": "tab:tier_occupancy",
+  "caption": "Risk-tier occupancy and failure distribution (June 2019).",
+  "wide": true,
+  "sources": [
+   "project/cloudsim/results/full_rho0.9/analysis/tier_occupancy.csv",
+   "project/cloudsim/results/full_rho0.9/analysis/analysis_meta.json",
+   "project/cloudsim/results/full_rho0.9/analysis/failures_detail.csv"
+  ],
+  "notes": "Host-day shares cover June days 1 \u2013 30 and are identical in both scenarios (the risk trace does not depend on \u03c1). The design target is the share implied by the P90 / P99 validation boundaries. Failures by tier are identical in all 11 policies and both \u03c1 values."
+ },
+ {
+  "number": 14,
+  "stem": "tab14_lost_by_tier_rho09",
+  "label": "tab:lost_tier_rho09",
+  "caption": "Lost computation by risk tier at failure, \u03c1 = 0.9.",
+  "wide": false,
+  "sources": [
+   "project/cloudsim/results/full_rho0.9/analysis/failures_detail.csv",
+   "project/cloudsim/results/full_rho0.9/analysis/policy_summary.csv"
+  ],
+  "notes": "\u03c1 = 0.9. Lost computation (h) grouped by the risk tier in force at the failure instant (LOW n = 27, MEDIUM n = 38, HIGH n = 110 failures). Row totals equal the lost-work totals of the overall comparison. Point estimates only; with 27 \u2013 110 failures per tier, differences are uncertain."
+ },
+ {
+  "number": "14b",
+  "stem": "tab14b_lost_by_tier_rho10",
+  "label": "tab:lost_tier_rho10",
+  "caption": "Lost computation by risk tier at failure, \u03c1 = 1.0.",
+  "wide": false,
+  "sources": [
+   "project/cloudsim/results/full_rho1.0/analysis/failures_detail.csv",
+   "project/cloudsim/results/full_rho1.0/analysis/policy_summary.csv"
+  ],
+  "notes": "\u03c1 = 1.0. Lost computation (h) grouped by the risk tier in force at the failure instant (LOW n = 27, MEDIUM n = 38, HIGH n = 110 failures). Row totals equal the lost-work totals of the overall comparison. Point estimates only; with 27 \u2013 110 failures per tier, differences are uncertain."
+ },
+ {
+  "number": 15,
+  "stem": "tab15_execution_validation",
+  "label": "tab:execution",
+  "caption": "Experiment execution and validation summary.",
+  "wide": false,
+  "sources": [
+   "project/cloudsim/results/full_rho0.9/validation/validation_summary.json",
+   "project/cloudsim/results/full_rho1.0/validation/validation_summary.json",
+   "project/cloudsim/results/full_rho0.9/manifest.csv",
+   "project/cloudsim/results/full_rho1.0/manifest.csv",
+   "project/cloudsim/results/full_rho0.9/validation/validation_by_shard.csv",
+   "project/paper_assets/evidence/determinism_rerun_logs.txt"
+  ],
+  "notes": "Checks (validate_full.py, independent Python recomputation): output hashes, host membership, score timing without look-ahead and carry-forward, failure times, workload regeneration, identical job set in all 11 policies, overhead, recovery timing, lost work, replacement hosts, deadlines, completion, FIFO order and per-job time accounting. Two validator defects (not simulator defects) were fixed before the final validation; simulator outputs were unchanged."
+ }
+]

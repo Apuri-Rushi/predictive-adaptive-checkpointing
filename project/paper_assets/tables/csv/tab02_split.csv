@@ -1,0 +1,5 @@
+split,dates,configuration,fold,observation_rows,examples_written,positive_rows,positive_drives,negative_rows_primary,unknown_rows_primary_excluded,negative_rows_sensitivity,unknown_rows_sensitivity_excluded,failure_day_or_after_excluded,history_complete_7d_rows,positive_rows_history_complete_7d
+train,2019-04-01 – 05-24,chronological,,5747437.0,5745061,1842,305,5743219,2091.0,5740680.0,4630.0,285.0,4983152.0,1636.0
+purge,2019-05-25 – 05-31,chronological,,763568.0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0
+test,2019-06-01 – 06-23,chronological,,2545101.0,2544754,997,175,2543757,209.0,2542168.0,1798.0,138.0,2530974.0,988.0
+tail,2019-06-24 – 06-30,chronological,,774849.0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0

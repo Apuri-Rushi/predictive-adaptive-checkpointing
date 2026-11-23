@@ -1,0 +1,20 @@
+{
+ "run_dir": "results/full_rho0.9",
+ "utilization": "0.9",
+ "hosts": 110848,
+ "failing_hosts": 175,
+ "jobs": 1141653,
+ "bootstrap_B": 2000,
+ "bootstrap": "paired host-clustered Poisson(1) weights, percentile 95% CI",
+ "seed": 20190601,
+ "majority_tier_hosts": {
+  "LOW": 92493,
+  "MEDIUM": 15675,
+  "HIGH": 2680
+ },
+ "failing_hosts_by_majority_tier": {
+  "HIGH": 96,
+  "LOW": 42,
+  "MEDIUM": 37
+ }
+}

@@ -1,0 +1,6 @@
+fold,train_rows_pos,train_drives_pos,train_rows_neg_primary,test_rows_pos,test_drives_pos,test_rows_neg_primary,test_drives_total,drives_in_both_train_and_test
+0,1460,243,4592096,219,39,509791,22218,0
+1,1444,240,4604778,163,27,504958,22000,0
+2,1474,246,4598646,225,41,505845,22049,0
+3,1474,244,4592213,207,37,509884,22220,0
+4,1516,247,4585143,183,31,513279,22361,0

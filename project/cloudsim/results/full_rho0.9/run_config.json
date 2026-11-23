@@ -1,0 +1,10 @@
+{
+  "shards": 56,
+  "utilization": "0.9",
+  "t0": "1,4,12,24,72",
+  "hosts_per_dc": "50",
+  "predictions": "c:\\Users\\rushi\\CC_project\\project\\ml\\results\\model_evaluation\\test_predictions.csv.gz",
+  "failures": "c:\\Users\\rushi\\CC_project\\project\\ml\\results\\dataset_audit_revalidation\\drive_failure_summary.csv",
+  "java": "C:\\Program Files\\Java\\jre1.8.0_501\\bin\\java.exe",
+  "classpath": "c:\\Users\\rushi\\CC_project\\project\\cloudsim\\vendor\\cloudsim-3.0.3\\jars\\cloudsim-3.0.3.jar;c:\\Users\\rushi\\CC_project\\project\\cloudsim\\research\\build\\classes"
+}

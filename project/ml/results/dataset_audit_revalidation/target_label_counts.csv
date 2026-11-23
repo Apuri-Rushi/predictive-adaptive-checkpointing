@@ -1,0 +1,7 @@
+scope,observation_rows,excluded_quality_drives,excluded_failure_day_or_after,positive_rows,positive_drives,negative_rows_primary,unknown_rows_primary,neg_per_pos_primary,negative_rows_sensitivity,unknown_rows_sensitivity,neg_per_pos_sensitivity,eligible_rows_with_full_7day_history_pct,positive_rows_with_full_7day_history
+all observations,9831138,183,495,3195,483,9050211,777054,2832.6,9045785,781480,2831.2,91.36,2979
+train examples 2019-04-01..2019-05-24,5747596,159,285,1842,305,5743219,2091,3117.9,5740680,4630,3116.5,86.74,1636
+purged rows 2019-05-25..2019-05-31 (not examples),763575,7,32,283,76,763235,18,2696.9,762937,316,2695.9,99.17,283
+test examples 2019-06-01..2019-06-23,2545118,17,138,997,175,2543757,209,2551.4,2542168,1798,2549.8,99.46,988
+censored tail 2019-06-24..2019-06-30 (not examples),774849,0,40,73,30,0,774736,0.0,0,774736,0.0,98.63,72
+observations dated 2019-06-17 (altered file),110533,1,7,45,45,110479,1,2455.1,110476,4,2455.0,99.92,45

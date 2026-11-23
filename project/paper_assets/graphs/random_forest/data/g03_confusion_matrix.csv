@@ -1,0 +1,5 @@
+actual,predicted,count,row_pct
+fails_within_7d,fail,206,20.661985957873622
+fails_within_7d,ok,791,79.33801404212637
+no_failure_7d,fail,4597,0.18071694741282285
+no_failure_7d,ok,2539160,99.81928305258718

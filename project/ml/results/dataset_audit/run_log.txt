@@ -1,0 +1,188 @@
+Auditing 91 daily files in project\dataset\backblaze_q2_2019 (chunksize=50,000)
+  [ 1/91] 2019-04-01.csv  rows=106,236  failures=12  terminator=CRLF  sci=0
+  [ 2/91] 2019-04-02.csv  rows=106,237  failures=10  terminator=CRLF  sci=0
+  [ 3/91] 2019-04-03.csv  rows=106,008  failures=9  terminator=CRLF  sci=0
+  [ 4/91] 2019-04-04.csv  rows=105,956  failures=10  terminator=CRLF  sci=0
+  [ 5/91] 2019-04-05.csv  rows=105,824  failures=4  terminator=CRLF  sci=0
+  [ 6/91] 2019-04-06.csv  rows=105,776  failures=1  terminator=CRLF  sci=0
+  [ 7/91] 2019-04-07.csv  rows=105,778  failures=2  terminator=CRLF  sci=0
+  [ 8/91] 2019-04-08.csv  rows=105,731  failures=3  terminator=CRLF  sci=0
+  [ 9/91] 2019-04-09.csv  rows=105,732  failures=8  terminator=CRLF  sci=0
+  [10/91] 2019-04-10.csv  rows=105,732  failures=4  terminator=CRLF  sci=0
+  [11/91] 2019-04-11.csv  rows=105,669  failures=3  terminator=CRLF  sci=0
+  [12/91] 2019-04-12.csv  rows=105,671  failures=1  terminator=CRLF  sci=0
+  [13/91] 2019-04-13.csv  rows=105,671  failures=2  terminator=CRLF  sci=0
+  [14/91] 2019-04-14.csv  rows=105,670  failures=1  terminator=CRLF  sci=0
+  [15/91] 2019-04-15.csv  rows=105,669  failures=11  terminator=CRLF  sci=0
+  [16/91] 2019-04-16.csv  rows=105,670  failures=1  terminator=CRLF  sci=0
+  [17/91] 2019-04-17.csv  rows=105,732  failures=6  terminator=CRLF  sci=0
+  [18/91] 2019-04-18.csv  rows=105,731  failures=7  terminator=CRLF  sci=0
+  [19/91] 2019-04-19.csv  rows=105,670  failures=5  terminator=CRLF  sci=0
+  [20/91] 2019-04-20.csv  rows=105,670  failures=3  terminator=CRLF  sci=0
+  [21/91] 2019-04-21.csv  rows=105,671  failures=3  terminator=CRLF  sci=0
+  [22/91] 2019-04-22.csv  rows=105,671  failures=8  terminator=CRLF  sci=0
+  [23/91] 2019-04-23.csv  rows=105,670  failures=8  terminator=CRLF  sci=0
+  [24/91] 2019-04-24.csv  rows=105,730  failures=5  terminator=CRLF  sci=0
+  [25/91] 2019-04-25.csv  rows=105,732  failures=6  terminator=CRLF  sci=0
+  [26/91] 2019-04-26.csv  rows=105,731  failures=4  terminator=CRLF  sci=0
+  [27/91] 2019-04-27.csv  rows=105,732  failures=2  terminator=CRLF  sci=0
+  [28/91] 2019-04-28.csv  rows=105,732  failures=4  terminator=CRLF  sci=0
+  [29/91] 2019-04-29.csv  rows=105,625  failures=6  terminator=CRLF  sci=0
+  [30/91] 2019-04-30.csv  rows=105,624  failures=1  terminator=CRLF  sci=0
+  [31/91] 2019-05-01.csv  rows=105,670  failures=5  terminator=CRLF  sci=0
+  [32/91] 2019-05-02.csv  rows=105,778  failures=8  terminator=CRLF  sci=0
+  [33/91] 2019-05-03.csv  rows=105,777  failures=2  terminator=CRLF  sci=0
+  [34/91] 2019-05-04.csv  rows=106,998  failures=4  terminator=CRLF  sci=0
+  [35/91] 2019-05-05.csv  rows=106,935  failures=1  terminator=CRLF  sci=0
+  [36/91] 2019-05-06.csv  rows=106,936  failures=15  terminator=CRLF  sci=0
+  [37/91] 2019-05-07.csv  rows=106,936  failures=8  terminator=CRLF  sci=0
+  [38/91] 2019-05-08.csv  rows=106,937  failures=6  terminator=CRLF  sci=0
+  [39/91] 2019-05-09.csv  rows=106,997  failures=3  terminator=CRLF  sci=0
+  [40/91] 2019-05-10.csv  rows=106,998  failures=5  terminator=CRLF  sci=0
+  [41/91] 2019-05-11.csv  rows=106,998  failures=5  terminator=CRLF  sci=0
+  [42/91] 2019-05-12.csv  rows=106,997  failures=2  terminator=CRLF  sci=0
+  [43/91] 2019-05-13.csv  rows=106,936  failures=10  terminator=CRLF  sci=0
+  [44/91] 2019-05-14.csv  rows=106,997  failures=12  terminator=CRLF  sci=0
+  [45/91] 2019-05-15.csv  rows=106,997  failures=8  terminator=CRLF  sci=0
+  [46/91] 2019-05-16.csv  rows=108,218  failures=4  terminator=CRLF  sci=0
+  [47/91] 2019-05-17.csv  rows=108,217  failures=8  terminator=CRLF  sci=0
+  [48/91] 2019-05-18.csv  rows=108,218  failures=2  terminator=CRLF  sci=0
+  [49/91] 2019-05-19.csv  rows=108,218  failures=2  terminator=CRLF  sci=0
+  [50/91] 2019-05-20.csv  rows=108,218  failures=7  terminator=CRLF  sci=0
+  [51/91] 2019-05-21.csv  rows=108,218  failures=6  terminator=CRLF  sci=0
+  [52/91] 2019-05-22.csv  rows=108,218  failures=8  terminator=CRLF  sci=0
+  [53/91] 2019-05-23.csv  rows=108,216  failures=3  terminator=CRLF  sci=0
+  [54/91] 2019-05-24.csv  rows=108,217  failures=5  terminator=CRLF  sci=0
+  [55/91] 2019-05-25.csv  rows=108,217  failures=1  terminator=CRLF  sci=0
+  [56/91] 2019-05-26.csv  rows=108,218  failures=2  terminator=CRLF  sci=0
+  [57/91] 2019-05-27.csv  rows=109,438  failures=2  terminator=CRLF  sci=0
+  [58/91] 2019-05-28.csv  rows=109,436  failures=10  terminator=CRLF  sci=0
+  [59/91] 2019-05-29.csv  rows=109,436  failures=7  terminator=CRLF  sci=0
+  [60/91] 2019-05-30.csv  rows=109,438  failures=6  terminator=CRLF  sci=0
+  [61/91] 2019-05-31.csv  rows=109,392  failures=4  terminator=CRLF  sci=0
+  [62/91] 2019-06-01.csv  rows=110,611  failures=2  terminator=CRLF  sci=0
+  [63/91] 2019-06-02.csv  rows=110,611  failures=7  terminator=CRLF  sci=0
+  [64/91] 2019-06-03.csv  rows=110,610  failures=6  terminator=CRLF  sci=0
+  [65/91] 2019-06-04.csv  rows=110,657  failures=7  terminator=CRLF  sci=0
+  [66/91] 2019-06-05.csv  rows=110,656  failures=10  terminator=CRLF  sci=0
+  [67/91] 2019-06-06.csv  rows=110,657  failures=9  terminator=CRLF  sci=0
+  [68/91] 2019-06-07.csv  rows=110,715  failures=5  terminator=CRLF  sci=0
+  [69/91] 2019-06-08.csv  rows=110,718  failures=5  terminator=CRLF  sci=0
+  [70/91] 2019-06-09.csv  rows=110,718  failures=10  terminator=CRLF  sci=0
+  [71/91] 2019-06-10.csv  rows=110,716  failures=1  terminator=CRLF  sci=0
+  [72/91] 2019-06-11.csv  rows=110,655  failures=12  terminator=CRLF  sci=0
+  [73/91] 2019-06-12.csv  rows=110,656  failures=7  terminator=CRLF  sci=0
+  [74/91] 2019-06-13.csv  rows=110,660  failures=5  terminator=CRLF  sci=0
+  [75/91] 2019-06-14.csv  rows=110,656  failures=0  terminator=CRLF  sci=0
+  [76/91] 2019-06-15.csv  rows=110,656  failures=4  terminator=CRLF  sci=0
+  [77/91] 2019-06-16.csv  rows=110,594  failures=5  terminator=CRLF  sci=0
+  [78/91] 2019-06-17.csv  rows=110,533  failures=8  terminator=CR-only  sci=58779
+  [79/91] 2019-06-18.csv  rows=110,595  failures=13  terminator=CRLF  sci=0
+  [80/91] 2019-06-19.csv  rows=110,699  failures=8  terminator=CRLF  sci=0
+  [81/91] 2019-06-20.csv  rows=110,702  failures=11  terminator=CRLF  sci=0
+  [82/91] 2019-06-21.csv  rows=110,640  failures=2  terminator=CRLF  sci=0
+  [83/91] 2019-06-22.csv  rows=110,701  failures=1  terminator=CRLF  sci=0
+  [84/91] 2019-06-23.csv  rows=110,702  failures=1  terminator=CRLF  sci=0
+  [85/91] 2019-06-24.csv  rows=110,701  failures=10  terminator=CRLF  sci=0
+  [86/91] 2019-06-25.csv  rows=110,701  failures=9  terminator=CRLF  sci=0
+  [87/91] 2019-06-26.csv  rows=110,702  failures=6  terminator=CRLF  sci=0
+  [88/91] 2019-06-27.csv  rows=110,701  failures=7  terminator=CRLF  sci=0
+  [89/91] 2019-06-28.csv  rows=110,702  failures=7  terminator=CRLF  sci=0
+  [90/91] 2019-06-29.csv  rows=110,702  failures=1  terminator=CRLF  sci=0
+  [91/91] 2019-06-30.csv  rows=110,640  failures=0  terminator=CRLF  sci=0
+BACKBLAZE Q2 2019 DATASET AUDIT
+========================================================================
+Generated by project/ml/preprocessing/inspect_dataset.py in 234 s; chunksize=50,000
+Data directory: C:\Users\rushi\CC_project\project\dataset\backblaze_q2_2019
+Daily CSV files: 91   other files in directory: none
+Total size: 2.79 GiB
+
+1. CORE COUNTS (confirmed)
+  Earliest date (file)            : 2019-04-01
+  Latest date (file)              : 2019-06-30
+  Calendar days / files present   : 91 / 91
+  Total records (drive-days)      : 9,831,138
+  Unique drive serial numbers     : 111,817
+  Records with failure = 1        : 500
+  Records with failure = 0        : 9,830,638
+  Unique failed drives            : 500
+  Drives with no failure record   : 111,317  (NOT guaranteed healthy beyond their observed period)
+    - of which still present on last day : 110,640
+    - of which left before last day w/o failure (censored): 677
+  Drive models                    : 42
+  Row-level failure rate          : 0.0051 %  (1 : 19,662)
+  Annualised failure rate (all)   : 1.86 %
+  Daily drive count min/median/max: 105,624 / 108,216 / 110,718
+  Daily failures min/median/max   : 0 / 5 / 15
+
+2. SCHEMA / SMART ATTRIBUTES (confirmed)
+  Columns: 129  (5 identifier columns + 124 SMART columns)
+  SMART attributes: 62 attribute IDs, each with _normalized and _raw
+  Header identical in all files   : True
+  Raw attributes <=5 % missing    : [1, 9, 12, 192, 194, 3, 4, 5, 7, 10, 197, 198, 199, 193]
+  Raw attributes 5-50 % missing   : [240, 241, 242, 187, 188, 190, 195]
+  Raw attributes 50-<100 % missing: [191, 184, 189, 200, 196, 2, 8, 183, 22, 223, 220, 222, 224, 226, 23, 24, 11, 225, 254, 16, 17, 168, 170, 173, 174, 177, 218, 231, 232, 233, 235, 250, 251, 252]
+  Raw attributes 100 % missing    : [13, 15, 179, 181, 182, 201, 255]
+  (full table: smart_missing_values.csv)
+
+3. DUPLICATES AND INVALID VALUES (confirmed)
+  Duplicate (serial, day) records : 0
+  Duplicate full rows within files: 0
+  failure_not_0_or_1              : 0
+  capacity_bytes_missing          : 0
+  capacity_bytes_nonpositive      : 663
+  serial_missing                  : 0
+  model_missing                   : 0
+  Negative SMART values (all cols): 0
+  Normalized values outside 0-255 : 0
+  Non-numeric SMART values        : 0
+  Serials with >1 model           : 0
+  Models with >1 capacity value   : 8 ['ST12000NM0007', 'ST4000DM000', 'ST8000NM0055', 'HGST HMS5C4040BLE640', 'HGST HUH721212ALN604', 'HGST HMS5C4040ALE640', 'ST10000NM0086', 'ST6000DX000']
+
+4. FILE INTEGRITY (confirmed)
+  Normal line terminator          : CRLF
+  ANOMALOUS FILE 2019-06-17.csv: terminator=CR-only, rows=110,533, non-ISO date rows=110,533, date!=filename rows=1, scientific-notation cells=58,779
+    date mismatch example: file=2019-06-17.csv date=6/15/19 serial=ZCH0CJC3 failure=1
+  Note: observation day is taken from the FILE NAME; row-level date mismatches are reported, not corrected.
+
+5. FAILED-DRIVE CHRONOLOGY (confirmed)
+  Failure record is the drive's last observation : 499 / 500
+  Drives with rows after their failure record     : 1
+  Drives with >1 failure record                   : 0
+  Failure recorded after an observation gap >1 day: 3
+  Failed drives present on first day              : 492
+  Observations before failure: min 0, P25 22, median 44, mean 45.1, P75 68, max 89
+    failed drives with 0 prior observations   : 12
+    failed drives with >=  1 prior observations : 488
+    failed drives with >=  7 prior observations : 447
+    failed drives with >= 14 prior observations : 426
+    failed drives with >= 30 prior observations : 346
+    failed drives with >= 60 prior observations : 179
+    failed drives with all 7 days before failure observed: 440
+
+6. FUTURE-FAILURE LABEL FEASIBILITY (counts only; no labels written)
+  Positive: failure record in (t, t+H]; Negative: drive observed alive at/after t+H;
+  Excluded: failure-day rows, rows after failure, censored rows (follow-up < H days).
+  H=1d : pos rows 485 (485 drives) | neg rows 9,718,835 | neg:pos 20,038.8:1 | censored end 110,640 | censored left 677 | failure-day rows 500
+  H=3d : pos rows 1,425 (488 drives) | neg rows 9,495,528 | neg:pos 6,663.5:1 | censored end 331,905 | censored left 1,779 | failure-day rows 500
+  H=7d : pos rows 3,222 (488 drives) | neg rows 9,050,361 | neg:pos 2,808.9:1 | censored end 774,325 | censored left 2,729 | failure-day rows 500
+  H=7d excluding 4 flagged failed drives: pos rows 3,202 (484 drives), neg rows 9,050,281
+  Chronological split preview (H=7d, cutoff 2019-06-01, purge 7d):
+    train (2019-04-01..2019-05-24): pos 1,862 rows / 309 drives, neg 5,743,353
+    test  (2019-06-01..2019-06-23): pos 1,077 rows / 177 drives, neg 2,543,766
+    rows purged at boundary: 763,525
+
+7. TOP MODELS BY FAILED DRIVES (full table: model_failure_summary.csv)
+  ST12000NM0007              drives  34,981  failed  239  AFR 2.76 %
+  ST4000DM000                drives  19,924  failed  104  AFR 2.13 %
+  ST8000NM0055               drives  14,447  failed   64  AFR 1.79 %
+  ST8000DM002                drives   9,900  failed   23  AFR 0.93 %
+  TOSHIBA MQ01ABF050         drives     518  failed   18  AFR 14.31 %
+  HGST HMS5C4040BLE640       drives  12,770  failed   15  AFR 0.47 %
+  ST500LM012 HN              drives     520  failed   10  AFR 7.99 %
+  HGST HUH721212ALN604       drives   9,675  failed    5  AFR 0.28 %
+  HGST HMS5C4040ALE640       drives   2,676  failed    5  AFR 0.78 %
+  TOSHIBA MQ01ABF050M        drives     384  failed    4  AFR 4.24 %
+
+OUTPUT FILES: dataset_summary.txt, daily_failure_counts.csv, drive_failure_summary.csv,
+              smart_missing_values.csv, model_failure_summary.csv, file_integrity.csv

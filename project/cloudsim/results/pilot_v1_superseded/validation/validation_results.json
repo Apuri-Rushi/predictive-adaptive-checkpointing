@@ -1,0 +1,71 @@
+{
+  "1_hosts_loaded_match_independent_shard": {
+    "pass": true,
+    "detail": "1984 hosts; independent=1984 java=1984"
+  },
+  "1_score_counts_and_first_days_match": {
+    "pass": true,
+    "detail": "45523 score rows in shard"
+  },
+  "2_prediction_applied_from_day_d_plus_1_no_lookahead": {
+    "pass": true,
+    "detail": "75392 host-days checked; score mismatches=0; look-ahead=0"
+  },
+  "3_missing_days_use_last_available_score": {
+    "pass": true,
+    "detail": "tier mismatches=0; carried-forward host-days=27816"
+  },
+  "4a_injector_failures_match_independent_trace": {
+    "pass": true,
+    "detail": "3 failures: [(906, 963029.0), (1468, 322061.0), (1637, 1612909.0)]"
+  },
+  "4b_failure_data_not_visible_to_broker_or_policies": {
+    "pass": true,
+    "detail": "files referencing failure trace types: ['CkptTags.java', 'ExperimentRunner.java', 'FailureEvent.java', 'FailureInjector.java', 'FailureTraceLoader.java', 'ScaleBenchmark.java', 'SimulationRunner.java']"
+  },
+  "4c_no_failure_information_before_failure": {
+    "pass": true,
+    "detail": "E3 T0=4h with vs without failure trace: differences before first failure=0; outside coupled datacenters/before coupling=0; non-failing hosts with changed checkpoint counts=0, changed tiers=0; max timing jitter=0.220s; 31 streams show jitter, all in datacenters [18, 29, 32, 39]"
+  },
+  "5_same_failures_and_workloads_for_all_policies": {
+    "pass": true,
+    "detail": "11 runs x 2 repeats share 1 (workload, failure, tier) hash; job mix independently regenerated"
+  },
+  "6_checkpoint_save_time_counted_as_overhead": {
+    "pass": true,
+    "detail": "overhead = 300 s x completed checkpoints; matches checkpoint log for every job, all runs"
+  },
+  "7_restore_and_boot_time_included": {
+    "pass": true,
+    "detail": "replacement ready at failure + D + B; restore done at + D + B + R; recovery_sec per job matches"
+  },
+  "8_lost_work_from_latest_completed_checkpoint": {
+    "pass": true,
+    "detail": "committed = last checkpoint before failure; lost = progress - committed = time since last commit/start"
+  },
+  "9_replacement_hosts_selected_and_used": {
+    "pass": true,
+    "detail": "distinct spare per failure; job continues on it; later jobs stay on it; spares never failed"
+  },
+  "10_deadline_success_recorded_correctly": {
+    "pass": true,
+    "detail": "success == finish <= submit + 1.5 L, all jobs, all runs"
+  },
+  "11_every_started_job_reaches_terminal_state": {
+    "pass": true,
+    "detail": "all jobs finished; failures fired == scheduled; no stream exhausted its 40-job list"
+  },
+  "accounting_identity_turnaround": {
+    "pass": true,
+    "detail": "E1_none: residual max 0.01s; E2_fixed_T0_12h: residual max 0.00s; E2_fixed_T0_1h: residual max 1.19s; E2_fixed_T0_24h: residual max 0.44s; E2_fixed_T0_4h: residual max 0.33s; E2_fixed_T0_72h: residual max 0.22s; E3_adaptive_T0_12h: residual max 0.56s; E3_adaptive_T0_1h: residual max 1.63s; E3_adaptive_T0_24h: residual max 0.43s; E3_adaptive_T0_4h: residual max 0.46s; E3_adaptive_T0_72h: residual max 0.22s"
+  },
+  "12_no_prediction_labels_read": {
+    "pass": true,
+    "detail": "label column index 4 never extracted (extracted [0, 1, 6]); outputs byte-identical with ~50% of labels scrambled: True (['E1_none', 'E2_fixed_T0_4h', 'E3_adaptive_T0_4h'])"
+  },
+  "determinism_run1_equals_run2": {
+    "pass": true,
+    "detail": "70 output files compared; differing: []"
+  },
+  "all_pass": true
+}

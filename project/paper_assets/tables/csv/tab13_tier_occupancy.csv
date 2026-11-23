@@ -1,0 +1,8 @@
+section,hosts,n_hosts,host_days,LOW,MEDIUM,HIGH
+host_day_share_pct,all,110848.0,3325440.0,54.09,39.305,6.605
+host_day_share_pct,failing,175.0,5250.0,24.781,22.914,52.305
+host_day_share_pct,non_failing,110673.0,3320190.0,54.136,39.331,6.533
+host_day_share_pct,validation_design_target,,,90.0,9.0,1.0
+hosts_by_majority_tier,,,,92493.0,15675.0,2680.0
+failing_hosts_by_majority_tier,,,,42.0,37.0,96.0
+failures_by_tier_at_failure,,,,27.0,38.0,110.0

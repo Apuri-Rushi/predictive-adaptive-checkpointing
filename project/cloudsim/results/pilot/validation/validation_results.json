@@ -1,0 +1,79 @@
+{
+  "1_hosts_loaded_match_independent_shard": {
+    "pass": true,
+    "detail": "1984 hosts; independent=1984 java=1984"
+  },
+  "1_score_counts_and_first_days_match": {
+    "pass": true,
+    "detail": "45523 score rows in shard"
+  },
+  "2_prediction_applied_from_day_d_plus_1_no_lookahead": {
+    "pass": true,
+    "detail": "75392 host-days; score mismatches=0; look-ahead=0"
+  },
+  "3_missing_days_use_last_available_score": {
+    "pass": true,
+    "detail": "tier mismatches=0; carried-forward host-days=27816"
+  },
+  "4a_injector_failures_match_independent_trace": {
+    "pass": true,
+    "detail": "3 failures"
+  },
+  "4b_failure_data_not_visible_to_broker_or_policies": {
+    "pass": true,
+    "detail": "broker and policy sources never reference FailureEvent / FailureTraceLoader"
+  },
+  "4c_no_failure_information_before_failure": {
+    "pass": true,
+    "detail": "E3 T0=4h with vs without failure trace: diffs before first failure=0; outside coupled datacenters=0; non-failing hosts with changed checkpoint counts=0, tiers=0; max jitter=0.220s; 32 streams with jitter in datacenters [18, 29, 32, 39]"
+  },
+  "5a_workload_plan_matches_independent_regeneration": {
+    "pass": true,
+    "detail": "22484 planned jobs; ids, lengths (24/72/168 h mix), nominal back-to-back submit times < 30-day cutoff"
+  },
+  "5b_identical_job_ids_lengths_submits_hosts_for_all_policies": {
+    "pass": true,
+    "detail": "11 policy runs x 2 repeats: one (workload, failure, tier) hash; every run processed exactly the 22484 planned jobs with identical stream/host, length and submit time"
+  },
+  "6_checkpoint_save_time_counted_as_overhead": {
+    "pass": true,
+    "detail": "overhead = 300 s x completed checkpoints = log count"
+  },
+  "7_restore_and_boot_time_included": {
+    "pass": true,
+    "detail": "ready at +D+B (also for idle failures); restore done at +D+B+R"
+  },
+  "8_lost_work_from_latest_completed_checkpoint": {
+    "pass": true,
+    "detail": "committed = last checkpoint; lost = time since commit/start"
+  },
+  "9_replacement_hosts_selected_and_used": {
+    "pass": true,
+    "detail": "distinct spare per failure; interrupted + later jobs run on it; earlier jobs on primary; spares never fail"
+  },
+  "10_deadline_recorded_correctly": {
+    "pass": true,
+    "detail": "deadline = submit + 1.5 L; state/success consistent with finish"
+  },
+  "11_every_submitted_job_reaches_terminal_state": {
+    "pass": true,
+    "detail": "planned == submitted == finished for every run; states only COMPLETED_ON_TIME / COMPLETED_LATE"
+  },
+  "fifo_one_job_at_a_time_never_before_submit": {
+    "pass": true,
+    "detail": "start >= submit; start >= previous finish; FIFO order"
+  },
+  "accounting_identity_turnaround": {
+    "pass": true,
+    "detail": "turnaround = queue + L + overhead + lost + interrupted + recovery; max residual E1_none: 0.01s; E2_fixed_T0_12h: 0.00s; E2_fixed_T0_1h: 1.19s; E2_fixed_T0_24h: 0.44s; E2_fixed_T0_4h: 0.33s; E2_fixed_T0_72h: 0.22s; E3_adaptive_T0_12h: 0.56s; E3_adaptive_T0_1h: 1.63s; E3_adaptive_T0_24h: 0.43s; E3_adaptive_T0_4h: 0.46s; E3_adaptive_T0_72h: 0.22s"
+  },
+  "12_no_prediction_labels_read": {
+    "pass": true,
+    "detail": "label column 4 never extracted (extracted [0, 1, 6]); outputs byte-identical with ~50% labels scrambled (['E1_none', 'E2_fixed_T0_4h', 'E3_adaptive_T0_4h']): True"
+  },
+  "determinism_run1_equals_run2": {
+    "pass": true,
+    "detail": "71 output files compared; differing: []"
+  },
+  "all_pass": true
+}

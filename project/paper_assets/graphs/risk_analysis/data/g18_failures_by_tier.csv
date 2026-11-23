@@ -1,0 +1,4 @@
+tier_at_failure,failures
+LOW,27
+MEDIUM,38
+HIGH,110
